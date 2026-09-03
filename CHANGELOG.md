@@ -1,0 +1,31 @@
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Alteração</th>
+      <th>Responsável</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b></b></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b></b></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b></b></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b></b></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
