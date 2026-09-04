@@ -31,3 +31,54 @@ Qual relação possui com o aplicativo? São os principais usuários do aplicati
 Quais necessidades possui? Precisam identificar rapidamente alergênicos nos produtos, principalmente quando as informações dos rótulos são difíceis de interpretar. O aplicativo também pode proporcionar mais autonomia durante as compras.
 
 Em que situação poderá utilizar a solução? Principalmente durante compras em supermercados, no momento de escolher um produto.
+
+2.3. Contexto de uso    
+
+Identifique os diferentes contextos nos quais o aplicativo poderá ser utilizado. Considere as informações fornecidas no estudo de caso, como: 
+
+Ambiente 
+
+Momento de utilização 
+
+Condições do usuário 
+
+Dispositivo 
+
+Conectividade 
+
+Iluminação 
+
+Nível de atenção 
+
+Situação de urgência 
+
+Outras condições específicas 
+
+ 
+Explique como esses contextos podem influenciar o desenvolvimento do aplicativo. 
+ 
+Resposta: O NutriScan é utilizado de pé, com pressa, em frente à prateleira do supermercado. Esse conjunto de condições é o que define as principais decisões do projeto. 
+ 
+Ambiente - O uso ocorre em corredores de supermercado, com circulação de pessoas, carrinho ocupando espaço e ruído de fundo. Isso exige que o aplicativo funcione com uma mão só, mantendo os controles essenciais ao alcance do polegar. Como o retorno sonoro é pouco eficaz em ambiente ruidoso, a confirmação da leitura deve ser visual e tátil, por vibração. 
+ 
+Momento de utilização - A consulta acontece nos segundos que antecedem a decisão de colocar o produto no carrinho e frequentemente se repete em vários produtos seguidos. O fluxo precisa ser: após a exibição do resultado, o retorno à câmera deve ser imediato, sem passagem por menus. 
+ 
+Condições do usuário - A pessoa está com pressa e quase sempre com as mãos ocupadas, segurando o carrinho, a cesta, a lista de compras ou a criança. Por isso o aplicativo não pode pedir que ela digite nada nem preencha campos durante o uso principal, e precisa conseguir ler o código mesmo com a mão ocupada ou com o celular um pouco torto. 
+ 
+Dispositivo e Conectividade - O aplicativo deve rodar em smartphones básicos, com câmera de 5 MP, pouca memória e pouco armazenamento livre, em locais onde a conexão é instável ou inexistente e onde parte do público possui franquia de dados limitada. Isso impõe o limite de 15 MB para o pacote, o uso de bibliotecas otimizadas, principalmente, o funcionamento offline como requisito e não como recurso complementar e a consulta não pode depender de rede. 
+ 
+Iluminação - O supermercado tem luz artificial fraca, e as embalagens plásticas e metalizadas refletem essa luz. Além disso, o próprio corpo da pessoa costuma fazer sombra sobre o produto na hora de apontar a câmera. Por isso o aplicativo precisa poder acender a lanterna do celular, e as cores do semáforo precisam ser fortes o bastante para continuar visíveis nessa iluminação e em telas mais simples, de brilho fraco. 
+ 
+Nível de atenção - A pessoa não está olhando só para o celular. Ela divide a atenção entre o aplicativo, o carrinho, a lista de compras e o que acontece em volta, então dá apenas uma olhada rápida na tela, de um ou dois segundos. O resultado precisa ser entendido sem que ela precise ler nada, o que é justamente o papel do semáforo: a cor informa antes da palavra. É também o que explica a exigência de nome do produto em letra grande, resposta em menos de dois segundos e o uso todo em até três toques. 
+ 
+Situação de urgência - Não é uma emergência de saúde, mas é uma decisão que não dá para desfazer depois. Se o aplicativo disser que é seguro e não for, a pessoa passa mal ou, no caso de quem tem doença celíaca, sofre um dano real. Ou seja, os dois erros possíveis não têm o mesmo peso. Sempre que houver dúvida, como um produto que não está na base ou um rótulo que indica possibilidade de traços, o aplicativo deve mostrar amarelo e nunca verde. 
+
+2.4. Objetivo e proposta de valor
+
+Explique, com suas próprias palavras: O que o aplicativo pretende oferecer e qual benefício deverá proporcionar ao usuário? 
+ 
+Resposta: O NutriScan quer responder uma pergunta simples que hoje é difícil de responder: este produto é seguro para mim? A pessoa aponta a câmera para o código de barras e recebe a resposta em cores. Verde significa que pode levar, amarelo pede atenção e vermelho indica que o produto contém algo que ela não pode consumir. 
+ 
+A informação já existe no rótulo, mas está em letra pequena e escrita de um jeito que a maioria das pessoas não entende. Muitos ingredientes que contêm leite, soja ou glúten aparecem com outros nomes, e reconhecer isso exige um conhecimento que o consumidor comum não tem. O aplicativo faz essa leitura no lugar dele. 
+ 
+O principal benefício é dar segurança sem exigir esforço. Hoje a pessoa precisa escolher entre parar e analisar cada embalagem ou comprar sem ter certeza. O aplicativo acaba com essa escolha, porque entrega em poucos segundos algo que antes levaria minutos e ainda podia dar errado. 
