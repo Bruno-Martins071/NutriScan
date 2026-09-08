@@ -82,3 +82,43 @@ Resposta: O NutriScan quer responder uma pergunta simples que hoje é difícil d
 A informação já existe no rótulo, mas está em letra pequena e escrita de um jeito que a maioria das pessoas não entende. Muitos ingredientes que contêm leite, soja ou glúten aparecem com outros nomes, e reconhecer isso exige um conhecimento que o consumidor comum não tem. O aplicativo faz essa leitura no lugar dele. 
  
 O principal benefício é dar segurança sem exigir esforço. Hoje a pessoa precisa escolher entre parar e analisar cada embalagem ou comprar sem ter certeza. O aplicativo acaba com essa escolha, porque entrega em poucos segundos algo que antes levaria minutos e ainda podia dar errado. 
+
+2.5 - Personalidade, identidade e experiência 
+
+Analise: 
+
+Palavras conceituais 
+
+Personalidade da identidade 
+
+Tom da interface 
+
+Tom da experiência do usuário 
+
+Forma como o aplicativo deseja ser lembrado 
+
+Explique como essas características deverão influenciar a solução. Não é necessário desenvolver a identidade visual nesta atividade. 
+
+Resposta: As palavras conceituais do NutriScan estão relacionadas a alergênicos, segurança alimentar, rotulagem, lactose, glúten, código de barras e ANVISA. A identidade deve transmitir uma personalidade prática, tecnológica e confiável. 
+
+Essas características devem influenciar a solução por meio de uma interface simples, rápida e direta, facilitando o uso no ambiente do supermercado. A experiência do usuário deve priorizar agilidade, com a câmera disponível imediatamente e o resultado apresentado de forma visual pelo semáforo de segurança.  
+
+O aplicativo deseja ser lembrado como um “guardião invisível” da saúde do usuário, auxiliando na identificação rápida de produtos adequados às suas restrições alimentares. Dessa forma, a solução deve transmitir segurança, confiança e praticidade em todas as interações.
+
+2.6 - Funcionalidades e características já definidas 
+
+Identifique as principais funcionalidades e características que já foram estabelecidas no estudo de caso. 
+
+Para cada uma, explique brevemente qual necessidade ela atende. 
+
+Funcionalidade: Scanner de código de barras / rótulos  
+
+Necessidade atendida: Permite a identificação rapidamente dos produtos no supermercado sem que o usuário digite as informações manualmente. 
+
+Funcionalidade: Exibição do “Semáforo Nutricional” (Verde, Amarelo e Vermelho) 
+
+Necessidade atendida: Facilita a compreensão imediata sobre a segurança do produto para a pessoas com alergias ou restrições alimentares. 
+
+Funcionalidade: Cadastro do perfil de restrições do usuário (glúten, lactose, amendoim, soja, etc.). 
+
+Necessidade atendida: Personaliza a análise dos produtos de acordo com as necessidades específicas de cada usuário. 
