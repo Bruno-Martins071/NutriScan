@@ -122,3 +122,51 @@ Necessidade atendida: Facilita a compreensão imediata sobre a segurança do pro
 Funcionalidade: Cadastro do perfil de restrições do usuário (glúten, lactose, amendoim, soja, etc.). 
 
 Necessidade atendida: Personaliza a análise dos produtos de acordo com as necessidades específicas de cada usuário. 
+
+2.7 - Restrições e condições 
+
+Identifique as restrições apresentadas no estudo de caso que deverão ser respeitadas durante o projeto. Podem estar relacionadas a: 
+
+Quantidade de telas: o protótipo deve possuir no máximo 4 telas principais. 
+
+Número de interações: a funcionalidade principal deve ocorrer em até 3 interações, com a câmera já aberta ao iniciar o aplicativo. 
+
+Dispositivos: o aplicativo deve funcionar em smartphones básicos com câmera de pelo menos 5 MP. 
+
+Versão do sistema operacional: não foi especificada no estudo de caso, portanto essa restrição deverá ser definida pela equipe durante o desenvolvimento. 
+
+Tamanho do aplicativo: deve ser leve, com menos de 15 MB. 
+
+Privacidade e armazenamento: o perfil de restrições do usuário deve ser armazenado apenas localmente, e o histórico pode ser anônimo, sem utilização para marketing. 
+
+Conectividade: o scanner deve funcionar offline, com a base de dados de alergênicos embutida no aplicativo. 
+
+Navegação: deve ser simples, rápida e direta, priorizando o uso imediato da câmera. 
+
+Acessibilidade: não há requisitos específicos de acessibilidade descritos no estudo de caso. Porém, a interface deve apresentar informações de forma clara e rápida, com nome do produto em fonte grande e uso de sinais visuais para facilitar a compreensão. 
+
+Ambiente de utilização: o aplicativo será utilizado principalmente em supermercados, com iluminação artificial, sendo necessário garantir uma visualização rápida e clara das informações. 
+
+Condições específicas: o resultado deve utilizar obrigatoriamente o semáforo de segurança (verde, amarelo e vermelho), com o nome do produto em fonte grande e resultado apresentado rapidamente. 
+
+ 
+
+2.8 - Pontos de atenção 
+
+Ao final da análise, o grupo deverá responder: 
+
+Quais são os 3 aspectos do estudo de caso que consideramos mais importantes para o sucesso do aplicativo? 
+
+ 1. Ser rápido e fácil de usar 
+
+O usuário vai estar no supermercado, provavelmente com pressa e com outras coisas para fazer. Então, não pode ficar procurando botão ou preenchendo informações. A câmera já deve abrir e, ao apontar para o código de barras, o resultado deve aparecer rapidamente. Quanto mais simples for o uso, maior a chance de a pessoa realmente usar o app no dia a dia. 
+
+ 2. Mostrar o resultado de um jeito claro 
+
+A pessoa precisa saber quase na hora se pode ou não comprar aquele produto. Por isso, o semáforo é muito importante: verde significa seguro, amarelo significa atenção e vermelho significa que tem alergênico. É uma forma simples de entender o resultado sem precisar ficar lendo um monte de informações no rótulo. 
+
+ 3. Funcionar sem internet e proteger os dados 
+
+No supermercado, a internet pode estar ruim ou nem funcionar. Se o aplicativo depender de internet, pode deixar de cumprir sua principal função justamente quando o usuário precisar. Por isso, o scanner precisa funcionar offline. 
+
+Além disso, informações sobre alergias e restrições são pessoais. O aplicativo deve guardar essas informações somente no celular do usuário, sem usar esses dados para publicidade ou marketing. 
