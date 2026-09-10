@@ -1,31 +1,39 @@
-<table>
-  <thead>
-    <tr>
-      <th>Integrante</th>
-      <th>Responsabilidade</th>
-      <th>O que deverá realizar</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>Bruno Alexandre</b></td>
-      <td>Pesquisa</td>
-      <td>Levantamento de informações sobre o público-alvo</td>
-    </tr>
-    <tr>
-      <td><b>Bianca Raiane</b></td>
-      <td>Persona</td>
-      <td>Criação e documentação da persona</td>
-    </tr>
-    <tr>
-      <td><b>Raoni Santos</b></td>
-      <td>Requisitos</td>
-      <td>Levantamento dos requisitos funcionais</td>
-    </tr>
-    <tr>
-      <td><b>João Victor Da Silva</b></td>
-      <td>Protótipo</td>
-      <td>Desenvolvimento das telas e fluxos</td>
-    </tr>
-  </tbody>
-</table>
+# NutriScan
+
+Aplicativo para leitura de rótulos e identificação de alergênicos em produtos industrializados.
+
+## Integrantes
+
+- Bianca Raiane Souza de Jesus
+- Bruno Alexandre Andrade Martins
+- João Victor da Silva Santos
+- Raoni Santos Lima
+
+## Turma
+
+GP0161NOT05A
+
+## Sobre o projeto
+
+O NutriScan é um aplicativo desenvolvido para auxiliar pessoas com alergias e intolerâncias alimentares na identificação de possíveis alergênicos presentes em produtos industrializados.
+
+A proposta é utilizar a leitura do código de barras para apresentar de forma rápida e visual um semáforo de segurança, indicando se o produto é seguro, requer atenção ou contém algum alergênico relacionado às restrições alimentares do usuário.
+
+## Responsabilidades na Atividade 01
+
+### Bruno Alexandre Andrade Martins
+- Objetivo
+- 2.1 Problema
+- 2.2 Público e usuários
+
+### Raoni Santos Lima
+- 2.3 Contexto de uso
+- 2.4 Objetivo e proposta de valor
+
+### João Victor da Silva Santos
+- 2.5 Personalidade, identidade e experiência
+- 2.6 Funcionalidades e características já definidas
+
+### Bianca Raiane Souza de Jesus
+- 2.7 Restrições e condições
+- 2.8 Pontos de atenção

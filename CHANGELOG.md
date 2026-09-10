@@ -1,31 +1,8 @@
-<table>
-  <thead>
-    <tr>
-      <th>Data</th>
-      <th>Alteração</th>
-      <th>Responsável</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b></b></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b></b></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b></b></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><b></b></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+# CHANGELOG
+
+## [03/09/2026]
+
+### Adicionado
+
+- Análise inicial do estudo de caso.
+- Documentação inicial do projeto NutriScan.
