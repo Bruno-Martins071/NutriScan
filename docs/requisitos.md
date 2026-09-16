@@ -67,3 +67,124 @@ As funcionalidades abaixo partem do estudo de caso, das personas e da pesquisa. 
 **Necessidade atendida:** Usar o NutriScan no supermercado mesmo sem rede ou com franquia de dados limitada.
 
 **Justificativa:** O funcionamento offline não é um extra: é condição do estudo de caso. Se a consulta depender de internet, o aplicativo falha exatamente na hora em que Ana e Roberto precisam dele.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 2.4 CRUD
+
+### Perfil de restrições alimentares
+
+**C — Criar:**
+O usuário configura suas restrições alimentares pela primeira vez.
+
+**R — Consultar:**
+O aplicativo consulta as restrições configuradas para comparar com os alergênicos encontrados nos produtos.
+
+**U — Atualizar:**
+O usuário pode alterar suas restrições alimentares quando necessário.
+
+**D — Excluir:**
+Não está definida no estudo de caso uma operação específica para exclusão do perfil ou de suas restrições.
+
+### Histórico de produtos escaneados
+
+**C — Criar:**
+Cada produto analisado pode ser registrado no histórico.
+
+**R — Consultar:**
+O usuário pode consultar os produtos anteriormente escaneados e seus respectivos resultados.
+
+**U — Atualizar:**
+Não é necessário, pois o resultado da análise é gerado pelo sistema e não precisa ser alterado pelo usuário.
+
+**D — Excluir:**
+Não está definido no estudo de caso que o usuário poderá excluir registros do histórico.
+
+### Base de dados de alergênicos
+
+**C — Criar:**
+Não se aplica, pois o usuário não cadastra novos alergênicos na base incorporada ao aplicativo.
+
+**R — Consultar:**
+O aplicativo consulta a base de dados para realizar a análise dos produtos.
+
+**U — Atualizar:**
+Não está definida uma funcionalidade para que o usuário atualize a base de alergênicos.
+
+**D — Excluir:**
+Não se aplica, pois o usuário não deve excluir informações da base de alergênicos.
+
+### Resumo do CRUD
+
+* **Perfil de restrições alimentares:** Criar, Consultar e Atualizar.
+* **Histórico de produtos escaneados:** Criar e Consultar.
+* **Base de dados de alergênicos:** Consultar.
+
+---
+
+## 2.5 Priorização das Funcionalidades
+
+### Funcionalidades Essenciais
+
+#### F01 — Perfil de restrições alimentares
+
+É essencial porque o aplicativo precisa conhecer as restrições do usuário para realizar uma análise personalizada dos produtos.
+
+#### F02 — Leitura de código de barras e QR Code
+
+É essencial porque representa a principal forma de entrada de informações no aplicativo e permite identificar o produto de maneira rápida.
+
+#### F03 — Consulta de informações do produto
+
+É essencial porque o aplicativo precisa obter as informações necessárias sobre o produto para realizar a análise.
+
+#### F04 — Identificação de alergênicos
+
+É essencial porque corresponde diretamente ao principal problema que o NutriScan busca solucionar: identificar possíveis alergênicos relacionados às restrições do usuário.
+
+#### F05 — Semáforo de segurança
+
+É essencial porque é o principal recurso visual do aplicativo e está definido como obrigatório no estudo de caso.
+
+#### F08 — Funcionamento offline
+
+É essencial porque o estudo de caso determina que a leitura e a análise dos produtos devem funcionar sem conexão com a internet.
+
+### Funcionalidades Importantes
+
+#### F06 — Detalhamento dos alergênicos encontrados
+
+É importante porque permite que o usuário compreenda por que determinado produto recebeu aquela classificação de segurança.
+
+#### F07 — Histórico de produtos escaneados
+
+É importante porque permite consultar produtos que já foram analisados, facilitando o uso recorrente do aplicativo.
+
+### Funcionalidades Secundárias
+
+Não foram definidas funcionalidades secundárias nesta versão do projeto.
+
+As oito funcionalidades definidas estão diretamente relacionadas ao fluxo principal ou às necessidades identificadas no estudo de caso, pesquisa e personas. Por isso, todas foram classificadas como **Essenciais** ou **Importantes**.
+
+### Resumo da priorização
+
+* **Essenciais:** F01, F02, F03, F04, F05 e F08.
+* **Importantes:** F06 e F07.
+* **Secundárias:** Nenhuma.
