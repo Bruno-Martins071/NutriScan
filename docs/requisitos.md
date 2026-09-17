@@ -80,11 +80,71 @@ As funcionalidades abaixo partem do estudo de caso, das personas e da pesquisa. 
 
 
 
+## 2.3 Requisitos não funcionais
 
+### RNF01 — Usabilidade
 
+O usuário deve conseguir acessar a funcionalidade principal de escaneamento de produtos em, no máximo, três interações após abrir o aplicativo.
 
+### RNF02 — Usabilidade
 
+A interface deve ser simples, intuitiva e adequada para uso rápido em ambientes como supermercados, permitindo o uso com apenas uma mão.
 
+### RNF03 — Acessibilidade
+
+O aplicativo deverá utilizar, além das cores verde, amarelo e vermelho, textos e ícones para indicar o resultado da análise, evitando que a informação dependa exclusivamente das cores.
+
+### RNF04 — Acessibilidade
+
+O aplicativo deverá fornecer feedback visual e tátil, como vibração, principalmente quando for identificado um ingrediente relacionado às restrições alimentares cadastradas pelo usuário.
+
+### RNF05 — Segurança e privacidade (LGPD)
+
+O aplicativo deverá coletar apenas os dados pessoais necessários para seu funcionamento e informar ao usuário a finalidade da coleta, seguindo os princípios da LGPD.
+
+### RNF06 — Segurança e privacidade (LGPD)
+
+As informações relacionadas às restrições alimentares do usuário deverão ser armazenadas de forma segura e não deverão ser compartilhadas com terceiros sem autorização.
+
+### RNF07 — Desempenho
+
+Após a leitura do código de barras ou identificação do produto, o aplicativo deverá apresentar o resultado da análise em até **2 segundos**, desde que os dados necessários estejam disponíveis.
+
+### RNF08 — Compatibilidade
+
+O aplicativo deverá funcionar corretamente em diferentes tamanhos de tela e resoluções de smartphones Android suportados pelo projeto.
+
+### RNF09 — Armazenamento de dados
+
+As restrições alimentares cadastradas pelo usuário deverão permanecer salvas no dispositivo para que não precisem ser cadastradas novamente a cada utilização.
+
+### RNF10 — Armazenamento de dados
+
+O aplicativo deverá manter localmente informações essenciais que permitam consultar produtos previamente identificados mesmo quando não houver conexão com a internet.
+
+### RNF11 — Conectividade
+
+O aplicativo deverá utilizar conexão com a internet para consultar ou atualizar informações sobre produtos, mas deverá possuir funcionalidades básicas disponíveis em modo offline.
+
+### RNF12 — Conectividade
+
+Caso não haja conexão com a internet e o produto não esteja disponível na base local, o aplicativo deverá informar ao usuário que não foi possível confirmar a segurança do produto, sem classificá-lo como seguro.
+
+### RNF13 — Dispositivos e sistema operacional
+
+O aplicativo deverá ser desenvolvido para dispositivos móveis Android e deverá funcionar em aparelhos de entrada que possuam câmera adequada para leitura de códigos de barras.
+
+### RNF14 — Dispositivos e sistema operacional
+
+A leitura deverá ser possível utilizando câmeras de aproximadamente **5 MP ou superiores**, desde que existam condições adequadas de iluminação e foco.
+
+### RNF15 — Restrição do projeto
+
+O aplicativo deverá possuir tamanho reduzido, buscando manter o pacote de instalação em até aproximadamente **15 MB**, sempre que tecnicamente possível.
+
+### RNF16 — Restrição de segurança
+
+Quando as informações sobre determinado produto forem insuficientes, desconhecidas ou inconclusivas, o aplicativo não deverá apresentar a classificação verde de "seguro", devendo alertar o usuário sobre a necessidade de atenção.
 
 
 ## 2.4 CRUD
