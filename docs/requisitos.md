@@ -190,7 +190,7 @@ As oito funcionalidades definidas estão diretamente relacionadas ao fluxo princ
 * **Secundárias:** Nenhuma.
 
 
-# Requisitos funcionais do NutriScan
+# Requisitos funcionais
 
 ## Perfil de restrições alimentares
 
