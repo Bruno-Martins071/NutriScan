@@ -248,3 +248,47 @@ As oito funcionalidades definidas estão diretamente relacionadas ao fluxo princ
 * **Essenciais:** F01, F02, F03, F04, F05 e F08.
 * **Importantes:** F06 e F07.
 * **Secundárias:** Nenhuma.
+
+
+# Requisitos funcionais
+
+## Perfil de restrições alimentares
+
+| Código | Requisito | Descrição |
+|---|---|---|
+| RF01 | Configuração de restrições | O sistema deve permitir que o usuário selecione suas alergias e intolerâncias a partir de uma lista predefinida (glúten, lactose, amendoim, soja, entre outros) ou informe outras manualmente. |
+| RF02 | Armazenamento local do perfil | O sistema deve guardar as restrições apenas no dispositivo, sem envio para servidores. |
+| RF03 | Edição do perfil | O sistema deve permitir que o usuário altere suas restrições a qualquer momento. |
+
+## Leitura de códigos
+
+| Código | Requisito | Descrição |
+|---|---|---|
+| RF04 | Ativação automática da câmera | Ao abrir o app, a câmera deve estar ativa em tela cheia. O usuário não toca em nenhum botão para iniciar a leitura. |
+| RF05 | Leitura de código de barras | O sistema deve ler códigos de barras usando a câmera do dispositivo (CameraX ou ML Kit Barcode Scanner). |
+| RF06 | Leitura de QR Code | O sistema deve ler QR Codes usando a mesma câmera. |
+| RF07 | Identificação do produto | O sistema deve localizar o produto correspondente ao código lido. |
+
+## Consulta e análise do produto
+
+| Código | Requisito | Descrição |
+|---|---|---|
+| RF08 | Consulta das informações do produto | O sistema deve buscar ingredientes e alergênicos do produto na base de dados embutida no app. |
+| RF09 | Identificação de alergênicos | O sistema deve cruzar os alergênicos do produto com as restrições do perfil do usuário. |
+| RF10 | Cadastro manual de produto | Quando o código não retornar dados, o sistema deve permitir que o usuário digite os ingredientes do rótulo para que a análise seja feita mesmo assim. |
+
+## Semáforo de segurança
+
+| Código | Requisito | Descrição |
+|---|---|---|
+| RF11 | Classificação de segurança | O sistema deve classificar o produto como seguro, requer atenção ou contém alergênico, de acordo com o perfil do usuário. |
+| RF12 | Exibição do semáforo | O sistema deve mostrar o resultado nas cores verde, amarelo e vermelho, acompanhadas de ícone ou texto, com o nome do produto em fonte grande. |
+| RF13 | Detalhamento do resultado | Ao tocar no resultado, o sistema deve listar quais ingredientes ou alergênicos motivaram a classificação. |
+
+## Histórico de produtos escaneados
+
+| Código | Requisito | Descrição |
+|---|---|---|
+| RF14 | Registro automático no histórico | O sistema deve salvar cada produto escaneado com o resultado obtido e a data da consulta. |
+| RF15 | Consulta do histórico | O sistema deve permitir que o usuário veja os últimos produtos escaneados e seus resultados, mesmo sem conexão. |
+| RF16 | Exclusão de registros | O sistema deve permitir que o usuário remova registros do histórico. O histórico pode ser mantido de forma anônima e não deve ser usado para marketing. |
