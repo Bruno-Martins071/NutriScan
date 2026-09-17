@@ -23,23 +23,23 @@ A proposta é utilizar a leitura do código de barras para apresentar de forma r
 ## Responsabilidades nas Atividades
 
 ### Bruno Alexandre Andrade Martins
-- ATIVIDADE 01    ATIVIDADE 02 
-- Objetivo        - pesquisa
-- 2.1 Problema    
-- 2.2 Público e 
+- ATIVIDADE 01    ATIVIDADE 02   ATIVIDADE 03
+- Objetivo        - pesquisa     - 2.5 Priorização, README,
+- 2.1 Problema                         CHANGELOG e Org. da                
+- 2.2 Público e                        Apresentação
     usuários
 
 ### Raoni Santos Lima
-- ATIVIDADE 01   AIVIDADE 02 
-- 2.3 Contexto   - benchmark
-        de uso   - construção do slide   
-- 2.4 Objetivo 
+- ATIVIDADE 01   AIVIDADE 02     ATIVIDADE 03
+- 2.3 Contexto   - benchmark      - 2.4 e 2.5 CRUD e 
+        de uso   - construção       Priorização
+- 2.4 Objetivo      do slide
     e proposta
      de valor
 
 ### João Victor da Silva Santos
-- ATIVIDADE 01        ATIVIDADE 02
-- 2.5 Personalidade,  -Personas
+- ATIVIDADE 01        ATIVIDADE 02   ATIVIDADE 03
+- 2.5 Personalidade,  -Personas       - 2.2 Funcionalidades
       identidade 
       e experiência
 - 2.6 Funcionalidades 
@@ -47,12 +47,13 @@ A proposta é utilizar a leitura do código de barras para apresentar de forma r
       já definidas
 
 ### Bianca Raiane Souza de Jesus
-- ATIVDADE 01      ATIVIDADE 02  
-- 2.7 Restrições   -Pesquisa
-      e condições
+- ATIVDADE 01      ATIVIDADE 02    ATIVIDADE 03
+- 2.7 Restrições   -Pesquisa        - 2.3 Requisitos
+      e condições                     não funcionais    
 - 2.8 Pontos de 
       atenção
 
 ### Pedro Savio Souza da Silva
-- ATIVIDADE 02 
-- Pesquisa
+- ATIVIDADE 02   ATIVIDADE 03
+- Pesquisa        - Requisitos 
+                    Funcionais
