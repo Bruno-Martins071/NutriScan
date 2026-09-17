@@ -39,3 +39,19 @@ Objetivo da pesquisa:
 As pesquisas mostraram descobertas importantes sobre os problemas enfrentados por pessoas com alergias alimentares, como a necessidade de identificar rapidamente a presença de alérgenos em alimentos, a dificuldade de leitura e compreensão dos rótulos, e a importância de condições ideais para a captura de imagens dos produtos.
 
 As pesquisas mostraram para nós que o projeto desenvolvido como caso de uso deve ser capaz de identificar alérgenos em alimentos de forma rápida e precisa, mesmo em condições não ideais de iluminação e ângulo. Além disso, as pesquisas destacaram a importância de manter uma base de dados atualizada para garantir a eficácia da identificação dos produtos.
+
+### Food-allergic consumers' labelling preferences — PubMed 
+
+Link: http://pubmed.ncbi.nlm.nih.gov/17584733/ 
+
+Participantes: Judith R Cornelisse-Vermaat, Jantine Voordouw, Vassiliki Yiakoumaki, Gregory Theodoridis, Lynn J Frewer
+
+Local: Oxford Academy
+
+Problemas citados na pequisa: 
+
+- Estudo sobre dificuldades de consumidores alérgicos com legibilidade e compreensão dos rótulos. 
+
+- Dificuldade na legibilidade do rótulo. 
+
+- informações pouco claras e insuficientes.
