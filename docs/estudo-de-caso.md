@@ -169,4 +169,4 @@ A pessoa precisa saber quase na hora se pode ou não comprar aquele produto. Por
 
 No supermercado, a internet pode estar ruim ou nem funcionar. Se o aplicativo depender de internet, pode deixar de cumprir sua principal função justamente quando o usuário precisar. Por isso, o scanner precisa funcionar offline. 
 
-Além disso, informações sobre alergias e restrições são pessoais. O aplicativo deve guardar essas informações somente no celular do usuário, sem usar esses dados para publicidade ou marketing. 
+Além disso, informações sobre alergias e restrições são pessoais. O aplicativo deve guardar essas informações somente no celular do usuário, sem usar esses dados para publicidade ou marketing.         
