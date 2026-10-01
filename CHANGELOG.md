@@ -28,3 +28,16 @@
 - Priorização das funcionalidades em essenciais e importantes.
 - Documentação da Atividade 03 no arquivo requisitos.md.
 - Preparação da apresentação dos requisitos do projeto.
+
+## [30/09/2026]
+
+### Adicionado
+
+- Desenvolvimento do protótipo de baixa fidelidade do aplicativo NutriScan.
+- Definição das principais telas, organização dos elementos e fluxo de navegação.
+- Desenvolvimento do protótipo de alta fidelidade com aplicação da identidade visual do projeto.
+- Definição de cores, tipografia, ícones, componentes e elementos de interface.
+- Representação das principais funcionalidades e interações do aplicativo.
+- Evolução da proposta visual a partir do protótipo de baixa fidelidade.
+- Documentação das principais decisões de UI/UX e arquitetura do sistema no arquivo justificativas.md.
+- Adição dos protótipos de baixa e alta fidelidade à documentação do projeto.
