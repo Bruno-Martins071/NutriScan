@@ -72,3 +72,96 @@ A câmera é o centro do aplicativo. Todas as outras telas saem dela e voltam pa
 - **O estudo de caso limita o protótipo a quatro telas principais.** Home, Resultado, Histórico e Perfil são as quatro. Ingredientes é um aprofundamento do Resultado e Digitar ingredientes é uma rota de exceção; nenhuma das duas faz parte do fluxo principal. "Monte seu perfil" é a versão de primeiro uso da tela de Perfil, necessária uma única vez, porque sem restrições o semáforo não tem como ser pessoal.
 - **O perfil fica visível e a um toque de distância em todas as leituras.** O chip do topo mostra contra o que o produto foi verificado, o que evita que alguém que alterna perfis leia o resultado do perfil errado.
 - **Cada tela é fácil de localizar.** Toda tela secundária tem título e botão de voltar no canto superior esquerdo, no padrão do Android, e o Histórico agrupa as leituras por dia para achar rápido um produto de uma compra anterior.
+
+## 6. Componentes
+
+Os componentes seguem o Material Design 3, padrão do Android. Isso deixa o aplicativo familiar para quem já usa celular Android e tem implementação pronta no Jetpack Compose.
+
+| Componente | Onde | Função e motivo |
+|---|---|---|
+| **Moldura de leitura com cantos e linha de varredura** | Home | Mostra onde apontar. Na leitura, os cantos assumem a cor do semáforo. É o elemento de assinatura visual. |
+| **Chip "Offline · base local"** | Home, Resultado | Confirma que tudo funciona sem rede (F08) e tira a dúvida sobre sinal no corredor. |
+| **Chip de perfil (avatar + restrições)** | Home, Resultado | Mostra o perfil ativo e abre o Perfil com um toque. |
+| **Barra inferior em vidro com dois atalhos de 64 px** | Home | Histórico e Perfil, com ícone, rótulo e subtítulo. Grandes o bastante para o polegar. |
+| **Botão tracejado "Digitar ingredientes"** | Home | Rota de exceção (RF10). O tracejado indica ação secundária e não compete com a câmera. |
+| **Chips "Verificado para"** | Resultado | Mostram as restrições consideradas na análise. |
+| **Cartão "Por que é..."** | Resultado | Uma linha por restrição, com ícone e texto (RF13). |
+| **Botão "Ler outro produto"** | Resultado | Ação principal no rodapé, ao alcance do polegar. |
+| **Lista com etiqueta de status, deslize e "Desfazer"** | Histórico | Etiqueta com texto (RNF03) e exclusão reversível (RF16). |
+| **Chips selecionáveis com marca de seleção** | Perfil | Marcar várias restrições só com toques, sem digitar (RF01). |
+| **Campo com sugestões e botão Adicionar** | Perfil | Restrição personalizada. A sugestão reduz digitação (tartrazina aparece como "Corante amarelo"). |
+| **Chave "Avisar sobre traços"** | Perfil | Deixa explícito que "pode conter" vira amarelo. |
+| **Faixa com cadeado "Fica só neste aparelho"** | Perfil | Informa a finalidade e o local de armazenamento dos dados (RNF05). |
+| **Campo de texto longo com contador e detecção ao vivo** | Digitar ingredientes | Mostra os alergênicos enquanto a pessoa digita e evita lista incompleta. |
+
+## 7. Acessibilidade
+
+O estudo de caso não traz requisitos de acessibilidade específicos, apenas pede nome do produto em fonte grande e sinais visuais claros. Por isso o grupo adotou como referência a WCAG 2.1 nível AA e as recomendações de acessibilidade do Android, além dos requisitos RNF03 e RNF04.
+
+| Critério | Como o protótipo atende |
+|---|---|
+| **Informação que não depende só de cor (WCAG 1.4.1, RNF03)** | Ícone e palavra em todos os estados do semáforo, etiqueta de texto no histórico e marca de seleção nos chips do perfil. |
+| **Contraste mínimo de 4,5:1 para texto (WCAG 1.4.3)** | Cores da câmera entre 5,4:1 e 17,3:1. Resultado amarelo com 10,6:1 e vermelho com 5,3:1. No verde, o texto branco tem 3,4:1, acima do mínimo de 3:1 para texto grande, como o nome do produto; os textos pequenos dessa tela serão escurecidos no desenvolvimento. |
+| **Fonte grande e texto ampliável** | Nome do produto em 32 px. Nenhum texto abaixo de 12 px. No app, tamanhos em sp para seguir a configuração de fonte do sistema. |
+| **Alvos de toque** | No mínimo 44 px no protótipo e 64 px na barra inferior. No desenvolvimento, 48 dp, que é o mínimo recomendado pelo Android. |
+| **Feedback tátil (RNF04)** | Vibração curta quando o código é lido. No desenvolvimento, um padrão de vibração diferente para o vermelho, para o aviso chegar mesmo sem olhar a tela. |
+| **Movimento reduzido** | Com "remover animações" ativo no Android, a linha de varredura fica parada. |
+| **Leitor de tela (TalkBack)** | O resultado será anunciado como uma frase completa, por exemplo: "Contém alergênico. Chocolate ao Leite. Lactose: contém soro de leite". |
+| **Uso com uma mão** | Ações frequentes na metade de baixo da tela e exclusão por deslize. |
+| **Linguagem simples** | "Pode conter" no lugar de "contaminação cruzada" no veredito. O termo técnico só aparece na explicação. |
+
+## 8. Decisões ligadas ao contexto de uso
+
+| Condição (estudo de caso e personas) | Decisão no protótipo |
+|---|---|
+| **Uma mão ocupada com carrinho, cesta ou criança** | Câmera sem botão de iniciar, ações no rodapé, alvos grandes, nada para digitar no fluxo principal. |
+| **Pressa e atenção de um ou dois segundos** | Tela inteira na cor do semáforo, nome em 32 px, uma instrução só na Home. |
+| **Várias leituras seguidas na mesma compra** | "Ler outro produto" volta direto para a câmera, sem menu no caminho. |
+| **Corredor barulhento** | Confirmação visual e por vibração. Nenhum aviso depende de som. |
+| **Luz artificial fraca e embalagens que refletem** | Fundo escuro na câmera, moldura clara, cores saturadas. |
+| **Conexão instável e franquia de dados limitada** | Base embutida, chip "Offline · base local", análise manual feita no aparelho. |
+| **Um "seguro" errado causa dano real** | Na dúvida, nunca verde: traços e produto fora da base viram amarelo, e a digitação manual lembra de conferir a lista inteira. |
+| **Dado de saúde é sensível** | Sem cadastro nem login, perfil e histórico só no aparelho, aviso explícito na tela de Perfil. |
+| **Quem compra para outra pessoa (Roberto)** | "Para quem é este perfil?" com nome opcional e "Verificado para" em cada resultado. |
+
+## 9. Arquitetura do sistema
+
+O NutriScan será um **aplicativo Android nativo, escrito em Kotlin com Jetpack Compose**, sem servidor no fluxo principal: tudo que a consulta precisa está no aparelho. A escolha segue o requisito de rodar em Android de entrada (RNF13) e as bibliotecas já citadas no RF05 (CameraX e ML Kit). O código é organizado nas camadas recomendadas pelo Android, com o padrão MVVM na interface.
+
+| Camada | O que contém | Responsabilidade |
+|---|---|---|
+| **Apresentação (UI)** | Telas em Compose e um ViewModel por tela (Scanner, Resultado, Histórico, Perfil, Digitar ingredientes). | Desenhar a tela, guardar o estado dela e navegar. Não conhece banco nem regra de alergênico. |
+| **Domínio** | Casos de uso: identificar produto, analisar produto, registrar leitura, salvar perfil. Motor do semáforo. | Regras do negócio em Kotlin puro, testáveis sem celular. Aqui mora a regra "na dúvida, nunca verde". |
+| **Dados** | Repositórios de produto, histórico e perfil. | Ler e gravar no armazenamento local, escondendo da camada de cima onde o dado está. |
+| **Serviços do aparelho** | CameraX, ML Kit, vibração. | Acesso ao hardware, isolado atrás de interfaces. |
+
+### Componentes e função no projeto
+
+| Componente | Função | Atende |
+|---|---|---|
+| **Jetpack Compose + Material 3** | Monta as telas com as cores, a tipografia e os componentes do protótipo. | RF12, RNF02, RNF08 |
+| **Navigation Compose** | Navegação entre as telas. No Resultado, o voltar do Android retorna direto à câmera. | RNF01 |
+| **ViewModel + StateFlow** | Guarda o estado de cada tela e sobrevive à rotação e a mudanças de tamanho de tela. | RNF08 |
+| **CameraX** | Pré-visualização em tela cheia, foco automático e controle da lanterna. | RF04, RNF14 |
+| **ML Kit Barcode Scanning (versão embutida)** | Lê código de barras e QR Code no próprio aparelho. A versão embutida já traz o modelo no app e não depende de download pelo Google Play Services. | RF05, RF06, F08 |
+| **Base de produtos (SQLite via Room, pré-carregada)** | Produtos por código: nome, marca, ingredientes, alergênicos e traços. Fonte candidata: recorte de produtos brasileiros do Open Food Facts (licença ODbL), já analisado no benchmark. | RF07, RF08, RNF10 |
+| **Dicionário de sinônimos** | Liga o nome do rótulo ao alergênico: soro de leite e leite em pó levam a lactose e leite; caseína e lactoalbumina levam à proteína do leite; farinha de trigo, malte e cevada levam a glúten. | F04, RF09 |
+| **Motor de análise** | Cruza ingredientes e traços com o perfil e devolve verde, amarelo ou vermelho com os motivos. Sem dados ou com traços, nunca devolve verde. | RF09, RF11, RNF12, RNF16 |
+| **Room: tabela de histórico** | Guarda produto, resultado e data de cada leitura e permite apagar. | RF14, RF15, RF16 |
+| **DataStore** | Guarda o perfil de restrições no armazenamento privado do app, sem conta e sem envio. | RF02, RNF06, RNF09 |
+| **Vibração (haptics)** | Confirma a leitura e diferencia o alerta vermelho. | RNF04 |
+
+### Fluxo de uma leitura
+
+1. A CameraX entrega os quadros da câmera ao ML Kit.
+2. O ML Kit reconhece o código e o app vibra.
+3. O caso de uso "identificar produto" busca o código na base local.
+4. Se encontrar, o motor de análise cruza os ingredientes com o perfil. Se não encontrar, o resultado é "Não está na base", em amarelo.
+5. A leitura é gravada no histórico.
+6. A tela mostra o semáforo. A busca em banco local indexado leva milissegundos, o que cabe com folga nos 2 segundos do RNF07.
+
+### Restrições técnicas
+
+- **Tamanho até 15 MB (RNF15):** publicação em Android App Bundle (a loja entrega só o código da arquitetura do aparelho), minificação com R8, fonte só com os pesos usados e base compactada. O ML Kit embutido soma alguns MB. Se a base completa não couber, entram os produtos mais vendidos e o restante é atendido por "Digitar ingredientes".
+- **Privacidade (RNF05, RNF06):** nenhum dado do usuário sai do aparelho. A internet só é usada para atualizar a base de produtos (RNF11), baixando um pacote de dados novo, sem enviar nada sobre o usuário. Sem conexão, tudo continua funcionando com a base local.
+- **Versão do Android:** o estudo de caso não define. A proposta é Android 7.0 (API 24) ou superior, que cobre a maior parte dos aparelhos em uso, a confirmar pela equipe.
