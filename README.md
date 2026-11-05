@@ -23,37 +23,37 @@ A proposta é utilizar a leitura do código de barras para apresentar de forma r
 ## Responsabilidades nas Atividades
 
 ### Bruno Alexandre Andrade Martins
-- ATIVIDADE 01    ATIVIDADE 02   ATIVIDADE 03
-- Objetivo        - pesquisa     - 2.5 Priorização, README,
-- 2.1 Problema                         CHANGELOG e Org. da                
-- 2.2 Público e                        Apresentação
-    usuários
+- ATIVIDADE 01    ATIVIDADE 02   ATIVIDADE 03         ATIVIDADE 04
+- Objetivo        - pesquisa    - 2.5 Priorização,    -2.1 Protótipo baixa 
+- 2.1 Problema                  README,CHANGELOG        fidelidade 
+- 2.2 Público e                 e Org. da Apresenta-  - README, CHANGELOG
+    usuários                      ção
 
 ### Raoni Santos Lima
-- ATIVIDADE 01   AIVIDADE 02     ATIVIDADE 03
-- 2.3 Contexto   - benchmark      - 2.4 e 2.5 CRUD e 
-        de uso   - construção       Priorização
+- ATIVIDADE 01   AIVIDADE 02     ATIVIDADE 03         ATIVIDADE 04
+- 2.3 Contexto   - benchmark     - 2.4 e 2.5 CRUD e   -2.1 Protótipo baixa
+        de uso   - construção       Priorização         fidelidade
 - 2.4 Objetivo      do slide
     e proposta
      de valor
 
 ### João Victor da Silva Santos
-- ATIVIDADE 01        ATIVIDADE 02   ATIVIDADE 03
-- 2.5 Personalidade,  -Personas       - 2.2 Funcionalidades
-      identidade 
-      e experiência
+- ATIVIDADE 01        ATIVIDADE 02   ATIVIDADE 03           ATIVIDADE 04
+- 2.5 Personalidade,  -Personas     - 2.2 Funcionalidades   -2.4 justifica-
+      identidade                                                tivas
+      e experiência                                         
 - 2.6 Funcionalidades 
       e características 
       já definidas
 
 ### Bianca Raiane Souza de Jesus
-- ATIVDADE 01      ATIVIDADE 02    ATIVIDADE 03
-- 2.7 Restrições   -Pesquisa        - 2.3 Requisitos
-      e condições                     não funcionais    
+- ATIVDADE 01      ATIVIDADE 02    ATIVIDADE 03       ATIVIDADE 04
+- 2.7 Restrições   -Pesquisa         2.3 Requisitos   -2.4 justificativas
+      e condições                     não funcionais  -slide apresentação
 - 2.8 Pontos de 
       atenção
 
 ### Pedro Savio Souza da Silva
-- ATIVIDADE 02   ATIVIDADE 03
-- Pesquisa        - Requisitos 
-                    Funcionais
+- ATIVIDADE 02   ATIVIDADE 03       ATIVIDADE 04
+- Pesquisa        - Requisitos      - 2.2 Protótipo Alta 
+                    Funcionais         fidelidade
