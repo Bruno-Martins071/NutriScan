@@ -4,7 +4,12 @@ import 'package:flutter/material.dart';
 import 'camera_background.dart';
 
 class CameraPreviewBackground extends StatefulWidget {
-  const CameraPreviewBackground({super.key});
+  const CameraPreviewBackground({
+    super.key,
+    this.lensDirection = CameraLensDirection.back,
+  });
+
+  final CameraLensDirection lensDirection;
 
   @override
   State<CameraPreviewBackground> createState() =>
@@ -30,6 +35,15 @@ class _CameraPreviewBackgroundState extends State<CameraPreviewBackground>
   }
 
   @override
+  void didUpdateWidget(CameraPreviewBackground oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.lensDirection != widget.lensDirection) {
+      _stopCamera();
+      _startCamera();
+    }
+  }
+
+  @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.inactive) {
       _stopCamera();
@@ -44,12 +58,12 @@ class _CameraPreviewBackgroundState extends State<CameraPreviewBackground>
       final cameras = await availableCameras();
       if (cameras.isEmpty) return;
 
-      final back = cameras.firstWhere(
-        (c) => c.lensDirection == CameraLensDirection.back,
+      final camera = cameras.firstWhere(
+        (c) => c.lensDirection == widget.lensDirection,
         orElse: () => cameras.first,
       );
       final controller = CameraController(
-        back,
+        camera,
         ResolutionPreset.high,
         enableAudio: false,
       );

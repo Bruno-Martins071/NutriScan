@@ -47,3 +47,4 @@
 
 ### Adicionado
 - Implementação da tela inicial do aplicativo, incluindo a funcionalidade de leitura de código de barras.
+- Implementação internet status.

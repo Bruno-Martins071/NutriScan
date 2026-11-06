@@ -12,11 +12,13 @@ class HomeTopBar extends StatelessWidget {
     required this.profileInitial,
     required this.restrictionsLabel,
     this.onProfileTap,
+    this.onSwitchCameraTap,
   });
 
   final String profileInitial;
   final String restrictionsLabel;
   final VoidCallback? onProfileTap;
+  final VoidCallback? onSwitchCameraTap;
 
   @override
   Widget build(BuildContext context) {
@@ -26,13 +28,46 @@ class HomeTopBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const _ConnectionChip(),
-          GlassChip(
-            leadingPadding: 6,
-            leading: _Avatar(initial: profileInitial),
-            label: restrictionsLabel,
-            onTap: onProfileTap,
+          Row(
+            children: [
+              _SwitchCameraButton(onTap: onSwitchCameraTap),
+              const SizedBox(width: 8),
+              GlassChip(
+                leadingPadding: 6,
+                leading: _Avatar(initial: profileInitial),
+                label: restrictionsLabel,
+                onTap: onProfileTap,
+              ),
+            ],
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SwitchCameraButton extends StatelessWidget {
+  const _SwitchCameraButton({this.onTap});
+
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: AppColors.glass,
+      shape: CircleBorder(side: BorderSide(color: AppColors.glassBorder)),
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: onTap,
+        child: const SizedBox(
+          width: 44,
+          height: 44,
+          child: Icon(
+            Icons.cameraswitch_outlined,
+            size: 20,
+            color: AppColors.text,
+          ),
+        ),
       ),
     );
   }
