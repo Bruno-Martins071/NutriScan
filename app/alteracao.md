@@ -1,0 +1,1 @@
+- Adicionado botão para trocar a camera de front ou traseira. (Botão de troca de câmera não existia no figma, mas foi adicionado para melhorar a experiência do usuário)

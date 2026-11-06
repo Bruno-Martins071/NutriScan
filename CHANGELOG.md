@@ -46,4 +46,7 @@
 ## [06/11/2026]
 
 ### Adicionado
+- Inicialização do projeto Flutter.
+- Reorganização da estrutura de pastas e arquivos do projeto.
 - Implementação da tela inicial do aplicativo, incluindo a funcionalidade de leitura de código de barras.
+- Implementação internet status.
