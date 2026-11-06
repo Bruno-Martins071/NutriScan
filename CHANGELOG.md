@@ -41,3 +41,9 @@
 - Evolução da proposta visual a partir do protótipo de baixa fidelidade.
 - Documentação das principais decisões de UI/UX e arquitetura do sistema no arquivo justificativas.md.
 - Adição dos protótipos de baixa e alta fidelidade à documentação do projeto.
+
+
+## [06/11/2026]
+
+### Adicionado
+- Implementação da tela inicial do aplicativo, incluindo a funcionalidade de leitura de código de barras.
