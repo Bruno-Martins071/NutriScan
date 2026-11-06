@@ -1,5 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
+import '../../../../core/network/connectivity_status.dart';
 import '../../../../core/theme/app_colors.dart';
 import 'glass_chip.dart';
 
@@ -22,10 +25,7 @@ class HomeTopBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          const GlassChip(
-            leading: _StatusDot(),
-            label: 'Offline · base local',
-          ),
+          const _ConnectionChip(),
           GlassChip(
             leadingPadding: 6,
             leading: _Avatar(initial: profileInitial),
@@ -34,6 +34,43 @@ class HomeTopBar extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class _ConnectionChip extends StatefulWidget {
+  const _ConnectionChip();
+
+  @override
+  State<_ConnectionChip> createState() => _ConnectionChipState();
+}
+
+class _ConnectionChipState extends State<_ConnectionChip> {
+  bool _isOnline = false;
+  late final StreamSubscription<bool> _subscription;
+
+  @override
+  void initState() {
+    super.initState();
+    ConnectivityStatus.isOnline.then(_update);
+    _subscription = ConnectivityStatus.onChanged.listen(_update);
+  }
+
+  @override
+  void dispose() {
+    _subscription.cancel();
+    super.dispose();
+  }
+
+  void _update(bool isOnline) {
+    if (mounted) setState(() => _isOnline = isOnline);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return GlassChip(
+      leading: const _StatusDot(),
+      label: _isOnline ? 'Online' : 'Offline · base local',
     );
   }
 }
