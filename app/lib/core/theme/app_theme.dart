@@ -16,4 +16,22 @@ abstract final class AppTheme {
         ),
         splashFactory: InkSparkle.splashFactory,
       );
+
+  static ThemeData get light => ThemeData(
+        useMaterial3: true,
+        brightness: Brightness.light,
+        fontFamily: AppTextStyles.fontFamily,
+        scaffoldBackgroundColor: AppColors.lightBackground,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: AppColors.brandStrong,
+          primary: AppColors.brandStrong,
+          error: AppColors.dangerStrong,
+          surface: AppColors.lightCard,
+        ),
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: AppColors.brandStrong,
+          selectionHandleColor: AppColors.brandStrong,
+        ),
+        splashFactory: InkSparkle.splashFactory,
+      );
 }
