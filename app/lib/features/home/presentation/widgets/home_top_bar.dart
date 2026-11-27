@@ -147,15 +147,17 @@ class _Avatar extends StatelessWidget {
         shape: BoxShape.circle,
         color: AppColors.brand,
       ),
-      child: Text(
-        initial,
-        style: const TextStyle(
-          fontWeight: FontWeight.w700,
-          fontSize: 12,
-          height: 14 / 12,
-          color: AppColors.ink,
-        ),
-      ),
+      child: initial.isEmpty
+          ? const Icon(Icons.person_rounded, size: 16, color: AppColors.ink)
+          : Text(
+              initial,
+              style: const TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 12,
+                height: 14 / 12,
+                color: AppColors.ink,
+              ),
+            ),
     );
   }
 }

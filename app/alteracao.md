@@ -1,1 +1,4 @@
 - Adicionado botão para trocar a camera de front ou traseira. (Botão de troca de câmera não existia no figma, mas foi adicionado para melhorar a experiência do usuário)
+- Tela de Perfil: ao digitar uma restrição que já existe na lista básica (ex.: "soja"), o chip correspondente é marcado em vez de criar uma restrição personalizada repetida. Restrição personalizada duplicada mostra o aviso "Essa restrição já está na lista." (não existia no figma)
+- Tela de Perfil: em telas muito estreitas o texto "Editar/Adicionar" do bloco do nome é ocultado para não quebrar o layout; o bloco inteiro continua tocável.
+- Home: sem perfil salvo, o chip do topo e o atalho Perfil mostram "Monte seu perfil" e um ícone de pessoa no lugar da inicial. Com mais de duas restrições, aparecem as duas primeiras e um contador (ex.: "Glúten · Lactose +2").

@@ -50,3 +50,14 @@
 - Reorganização da estrutura de pastas e arquivos do projeto.
 - Implementação da tela inicial do aplicativo, incluindo a funcionalidade de leitura de código de barras.
 - Implementação internet status.
+
+## [10/11/2026]
+
+### Adicionado
+- Implementação da tela de Perfil do usuário, com as versões "Monte seu perfil" (primeiro uso) e "Perfil" (edição).
+- Cadastro das alergias e intolerâncias básicas como dados iniciais do banco local (SQLite).
+- Vínculo das alergias, das restrições personalizadas e da opção "Avisar sobre traços" ao perfil do usuário.
+- Sugestões ao digitar uma restrição personalizada, por nome ou nome alternativo (ex.: tartrazina sugere "Corante amarelo").
+- Navegação da Home para o Perfil pelo chip do topo e pela barra inferior.
+- Home passa a exibir a inicial e as restrições do perfil salvo.
+- Widgets reutilizáveis de cabeçalho de página, card de seção, faixa informativa, botão principal e avatar.
