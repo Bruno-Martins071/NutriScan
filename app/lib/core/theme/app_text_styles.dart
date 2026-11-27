@@ -85,6 +85,14 @@ abstract final class AppTextStyles {
     color: AppColors.lightText,
   );
 
+  static const TextStyle lightCaption = TextStyle(
+    fontFamily: fontFamily,
+    fontWeight: FontWeight.w400,
+    fontSize: 12,
+    height: 16 / 12,
+    color: AppColors.lightTextSecondary,
+  );
+
   static const TextStyle primaryButton = TextStyle(
     fontFamily: fontFamily,
     fontWeight: FontWeight.w600,

@@ -1,6 +1,7 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../core/routing/app_routes.dart';
 import '../widgets/camera_preview_background.dart';
 import '../widgets/home_bottom_bar.dart';
 import '../widgets/home_top_bar.dart';
@@ -30,6 +31,10 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  void _openHistory() {
+    Navigator.of(context).pushNamed(AppRoutes.history);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,9 +58,12 @@ class _HomePageState extends State<HomePage> {
                 const Spacer(flex: 2),
                 const ManualEntryButton(),
                 const Spacer(flex: 1),
-                const Padding(
-                  padding: EdgeInsets.fromLTRB(16, 0, 16, 16),
-                  child: HomeBottomBar(restrictionsLabel: _restrictionsLabel),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+                  child: HomeBottomBar(
+                    restrictionsLabel: _restrictionsLabel,
+                    onHistoryTap: _openHistory,
+                  ),
                 ),
               ],
             ),
