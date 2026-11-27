@@ -50,3 +50,11 @@
 - Reorganização da estrutura de pastas e arquivos do projeto.
 - Implementação da tela inicial do aplicativo, incluindo a funcionalidade de leitura de código de barras.
 - Implementação internet status.
+
+## [26/11/2026]
+
+### Adicionado
+- Telas de Histórico (F07): leituras agrupadas por dia (Hoje, Ontem, data), selos Seguro/Atenção/Contém alergênico, deslizar para apagar e "Desfazer", salvas em banco local próprio (nutriscan_history.db).
+- Navegação da home para o histórico pelo botão Histórico da barra inferior.
+- Cores de "Atenção" (warningStrong/warningSoft/warningDeep) em AppColors e estilo lightCaption em AppTextStyles, usados pelo Histórico sobre o tema claro (AppTheme.light).
+- Testes do histórico (controller, banco local e tela).
